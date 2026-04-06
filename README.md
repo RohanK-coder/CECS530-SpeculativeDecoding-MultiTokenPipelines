@@ -1,4 +1,4 @@
-# Fresh SpecDecode
+# Speculative Decoding with MultiToken Pipelines
 
 A standalone, from-scratch local project that demonstrates three text generation modes for causal language models:
 
