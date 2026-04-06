@@ -1,0 +1,2 @@
+[console_scripts]
+fresh-specdecode = fresh_specdecode.cli:main

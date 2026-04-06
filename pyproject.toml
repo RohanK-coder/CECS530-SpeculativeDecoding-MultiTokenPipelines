@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fresh-specdecode"
+version = "0.1.0"
+description = "From-scratch local project for baseline, speculative, and pipelined decoding"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "OpenAI"}]
+dependencies = [
+  "torch>=2.2.0",
+  "transformers>=4.40.0",
+  "accelerate>=0.28.0",
+  "pytest>=8.0.0"
+]
+
+[project.scripts]
+fresh-specdecode = "fresh_specdecode.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
